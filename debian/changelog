@@ -1,0 +1,5 @@
+yyjson (0.9.0+ds-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #972804)
+
+ -- Carlos Henrique Lima Melara <charlesmelara@riseup.net>  Sat, 11 May 2024 11:49:09 -0300
