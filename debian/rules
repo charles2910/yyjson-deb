@@ -8,4 +8,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-	-DBUILD_SHARED_LIBS=ON
+	-DBUILD_SHARED_LIBS=ON \
+	-DYYJSON_BUILD_DOC=ON \
+	-DYYJSON_BUILD_TESTS=ON
