@@ -1,0 +1,37 @@
+From: Carlos Henrique Lima Melara <charlesmelara@riseup.net>
+Date: Sun, 12 May 2024 22:14:04 -0300
+Subject: remove possible privacy breach from docs
+Forwarded: not-needed
+Last-Update: 2024-05-12
+---
+ README.md | 10 ----------
+ 1 file changed, 10 deletions(-)
+
+diff --git a/README.md b/README.md
+index 2d3098d..f86391e 100644
+--- a/README.md
++++ b/README.md
+@@ -1,12 +1,6 @@
+ 
+ # Introduction
+ 
+-[![Build](https://img.shields.io/github/actions/workflow/status/ibireme/yyjson/cmake.yml?branch=master&style=flat-square)](https://github.com/ibireme/yyjson/actions/workflows/cmake.yml)
+-[![Codecov](https://img.shields.io/codecov/c/github/ibireme/yyjson/master?style=flat-square)](https://codecov.io/gh/ibireme/yyjson)
+-[![License](https://img.shields.io/github/license/ibireme/yyjson?color=blue&style=flat-square)](https://github.com/ibireme/yyjson/blob/master/LICENSE)
+-[![Version](https://img.shields.io/github/v/release/ibireme/yyjson?color=orange&style=flat-square)](https://github.com/ibireme/yyjson/releases)
+-[![Packaging status](https://img.shields.io/repology/repositories/yyjson.svg?style=flat-square)](https://repology.org/project/yyjson/versions)
+-
+ A high performance JSON library written in ANSI C.
+ 
+ # Features
+@@ -203,10 +197,6 @@ The pre-generated Doxygen HTML for the release version can be viewed here:
+     * [Data structure](https://ibireme.github.io/yyjson/doc/doxygen/html/md_doc__data_structure.html)
+     * [Changelog](https://ibireme.github.io/yyjson/doc/doxygen/html/md__c_h_a_n_g_e_l_o_g.html)
+ 
+-# Packaging status
+-
+-[![Packaging status](https://repology.org/badge/vertical-allrepos/yyjson.svg)](https://repology.org/project/yyjson/versions)
+-
+ # Built With yyjson
+ 
+ A non-exhaustive list of projects that expose yyjson to other languages or
