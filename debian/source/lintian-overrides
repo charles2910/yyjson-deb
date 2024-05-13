@@ -1,0 +1,4 @@
+# there are 2 SVGs embedded and this is triggering the long line length check
+# and emitting source-is-missing and source-contains-prebuilt-javascript-object
+source-is-missing [doc/doxygen/theme/doxygen-awesome-darkmode-toggle.js]
+source-contains-prebuilt-javascript-object [doc/doxygen/theme/doxygen-awesome-darkmode-toggle.js]
