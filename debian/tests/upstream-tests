@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+# libyyjson tests run against the system's installed libyyjson.
+#
+# Patches welcome to build only tests without building everything :-)
+
+export DEB_BUILD_PROFILES="nocheck,nodoc"
+export DH_VERBOSE=1
+
+echo "dh_auto_configure"
+dh_auto_configure --builddir "$AUTOPKGTEST_TMP" -- \
+                  -DBUILD_SHARED_LIBS=ON \
+                  -DYYJSON_BUILD_TESTS=ON
+
+echo "dh_auto_build"
+dh_auto_build --builddir "$AUTOPKGTEST_TMP"
+
+cd "$AUTOPKGTEST_TMP"
+
+pwd
+
+rm --verbose libyyjson.so*
+
+ctest --output-on-failure
