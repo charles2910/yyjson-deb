@@ -1,5 +1,8 @@
 version=4
-
-opts="filenamemangle=s%(?:.*?)?v?(@ANY_VERSION@@ARCHIVE_EXT@)%@PACKAGE@-$1%" \
- https://github.com/ibireme/yyjson/tags \
- (?:.*?/)v?@ANY_VERSION@@ARCHIVE_EXT@
+opts="searchmode=plain,\
+      filenamemangle=s%v?@ANY_VERSION@%@PACKAGE@-$1.tar.xz%,\
+      uversionmangle=s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha|a|b)\d*)$/$1~$2/, \
+      dversionmangle=s/@DEB_EXT@//, \
+      repacksuffix=+ds" \
+https://api.github.com/repos/ibireme/yyjson/tags?per_page=100 \
+https://api.github.com/repos/[^/]+/[^/]+/tarball/refs/tags/@ANY_VERSION@
