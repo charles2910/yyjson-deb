@@ -1,0 +1,8 @@
+Document: libyyjson-html-documentation
+Title: yyjson documentation
+Abstract: yyjson library documentation
+Section: Programming
+
+Format: html
+Index: /usr/share/doc/libyyjson-doc/html/index.html
+Files: /usr/share/doc/libyyjson-doc/html/*.html
