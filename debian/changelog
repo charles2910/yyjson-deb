@@ -1,3 +1,10 @@
+yyjson (0.10.0+ds-1) unstable; urgency=medium
+
+  * New upstream version 0.10.0+ds.
+  * debian/libyyjson0.symbols: add symbols from new release.
+
+ -- Carlos Henrique Lima Melara <charlesmelara@riseup.net>  Tue, 23 Jul 2024 22:54:50 +0900
+
 yyjson (0.9.0+ds-2) unstable; urgency=medium
 
   * Source only upload.
