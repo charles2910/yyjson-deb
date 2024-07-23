@@ -13,6 +13,7 @@ libyyjson.so.0 libyyjson0 #MINVER#
  yyjson_alc_dyn_new@Base 0.9.0+ds
  yyjson_alc_pool_init@Base 0.9.0+ds
  yyjson_doc_mut_copy@Base 0.9.0+ds
+ yyjson_locate_pos@Base 0.10.0+ds
  yyjson_merge_patch@Base 0.9.0+ds
  yyjson_mut_doc_free@Base 0.9.0+ds
  yyjson_mut_doc_imut_copy@Base 0.9.0+ds
