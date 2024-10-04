@@ -1,0 +1,21 @@
+on: push
+
+jobs:
+  build-debs:
+    permissions:
+      id-token: write
+      contents: read
+      attestations: write
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: ['amd64', 'arm64', 'armhf']
+    uses: torizon/torizon-deb-ci/.github/workflows/toradex-deb-ci.yml@charles/bump-piuparts
+    with:
+      arch: ${{ matrix.arch }}
+      distribution: bookworm
+      docker-image: debian:bookworm
+      package-name: yyjson
+      run-attestation: true
+      run-piuparts: false
+      upload-artifacts: true
